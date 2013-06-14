@@ -1,0 +1,60 @@
+/*
+Theme Name:     Super Sensitive	
+Theme URI:      http://wpeden.com/product/wpeden-sensitive-wordpress-theme/
+Description:    Child theme for the Sensitive theme
+Author:         Aaron Ballman
+Author URI:     http://aaronballman.com
+Template:       sensitive
+Version:        1.1.0
+*/
+
+@import url("../sensitive/style.css");
+
+.navbar .brand {
+  font-size: 32px !important;
+}
+
+.btn-info {
+  background-color: #8DB152 !important;
+}
+
+.btn-warning {
+  background-color: #E89B2B !important;
+}
+
+.btn-primary {
+  background-color: #26517A !important;
+}
+
+.upload {
+    position:relative;
+    /*width:664px;*/
+    height:30px;
+    /*float: left;*/
+}
+.realupload {
+    position:absolute;
+    top:0;
+    right:0;
+
+    /* start of transparency styles */
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity:0);
+    /* end of transparency styles */
+
+    z-index:2; /* bring the real upload interactivity up front */
+    /*width:270px;*/
+}
+form .fakeupload {
+    background:url(/wp-content/uploads/2013/06/spacer.gif) no-repeat 100% 50%;
+}
+form .fakeupload input {
+    width:0px;
+    opacity:0;
+}
+
+.submission{
+    left: 30px;
+    position: relative;
+}
